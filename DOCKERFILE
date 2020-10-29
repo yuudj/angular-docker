@@ -1,5 +1,6 @@
 # como es temporal para compilar usamos la version full en vez de la -alpine
 FROM node:lts AS builder
+EXPOSE 80
 WORKDIR /usr/src/
 COPY ./ .
 RUN npm i
